@@ -1,0 +1,32 @@
+{
+  "name": "git-in",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sndsgn/git-in",
+  "authors": [
+    "sndsgn <forloine@gmail.com>"
+  ],
+  "dependencies" : {
+    "underscore" : "latest",
+    "jquery" : "latest",
+    "backbone" : "latest"
+  },
+  "description": "A search tool to indentify GitHub repo contribution opportunities.",
+  "main": "App.js",
+  "keywords": [
+    "GitHub",
+    "open",
+    "source",
+    "contribute",
+    "backbone",
+    "javascript",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

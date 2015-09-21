@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <title>
+      
+    </title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="tachyons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular.min.js"></script>
+  </head>
+  <body ng-app="GitIn">
+    <h1 class="center tc ttu">Git-In</h1>
+    <div ng-controller="GitInController" class="center tc">
+      <form name="searchForm" ng-submit="addSearch()">
+        <input type="text" name="input" placeholder="Search a language" ng-model="newSearch" class="pam" required></input>
+        <input type="submit" class="pam b" value="Search"></input>
+      </form>
+      <ul class="list center tc">
+        <li ng-repeat="query in search">{{query.title}}</li>
+      </ul>
+    </div>
+    <div role="alert">
+      <span ng-show="searchForm.input.$error.required">Please add a search language</span>
+    </div>
+
+      
+    <script>
+      angular.module('GitIn', [])
+      .controller('GitInController', ['$scope', function($scope, Requests) {
+         $scope.search = [];
+
+         $scope.addSearch = function() {
+           $scope.search.push({'title': $scope.newSearch});
+           $scope.newSearch = null;
+         };
+      }]);
+    </script>
+  </body>
+</html>

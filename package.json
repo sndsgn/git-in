@@ -1,0 +1,32 @@
+{
+  "name": "git-in",
+  "version": "0.0.0",
+  "description": "A search tool to indentify GitHub repo contribution opportunities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies" : {
+    "express" : "latest",
+    "nodemon" : "latest",
+    "fs" : "latest",
+    "url" : "url"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sndsgn/git-in.git"
+  },
+  "keywords": [
+    "GitHub",
+    "backbone",
+    "javascript",
+    "contribute",
+    "repo"
+  ],
+  "author": "@sndsgns forloine@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sndsgn/git-in/issues"
+  },
+  "homepage": "https://github.com/sndsgn/git-in"
+}
